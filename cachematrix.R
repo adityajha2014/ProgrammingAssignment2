@@ -1,5 +1,8 @@
-## Put comments here that give an overall description of what your
-## functions do
+## makeCacheMatrix is the function to store the matrix and the cached inverse so that
+## we do not have to recalculate it again and again if the matrix in question is same.
+## cacheSolve function is defined to retrive the value to cached inverse of matrix.
+## It first check if the inverse of matrix is cached or not. If it is, it returns the cached 
+## value, if not, the it calculate the inverse and set it as cache for further use.
 
 ## Function to create matrix object
 
