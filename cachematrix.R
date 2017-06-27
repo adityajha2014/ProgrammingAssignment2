@@ -5,6 +5,10 @@
 ## value, if not, the it calculate the inverse and set it as cache for further use.
 
 ## Function to create matrix object
+## get.matrix to get the matrix stored
+## set.matrix to set the new value of matrix object
+## get.inverse returns the cached inverse of matrix
+## set.inverse set the inverse of matrix for cache
 
 makeCacheMatrix <- function(x = matrix()) {
 inverse<-NULL
@@ -29,7 +33,9 @@ cacheSolve <- function(x, ...) {
         return(temp)
     }
     mat<-x$get.matrix()
+	## Now calculating the inverse of matrix
     inv<-solve(mat)
+	## Setting the inverse of matrix as cache
     x$set.inverse(inv)
     return(inv)
 }
